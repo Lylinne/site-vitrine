@@ -2,31 +2,48 @@
 	width: 100%;
 	overflow: hidden;
 }
+
 h1{
 	text-align: center;
 	font-size: 2em;
 }
 #tete{
-	width: 100%;
-	font-size: 1.3em;
-	display: flex;
-	justify-content: space-between;
+    margin-left: -3%;
+
 }
+
+figure{
+		position: relative;
+		margin-left: -1%;
+		overflow: hidden;
+		padding: 3%;
+		display: flex;
+		width: 98%;
+}
+.flotante{
+	width: 100%;
+	height: auto;
+	animation: animeButton 1s alternate linear infinite;
+}
+
 img{
 	width: 100%;
 	height: 100%;
 }
-#titre{
-	display: flex;
-	justify-content: space-around;
-}
+
 #paragraphe{
 	display: flex;
-	justify-content: space-around;
+    text-align: justify;
+	padding: 1%;
 }
-.description{
-	width: 25%;
+.dive{
+	width: 33.33%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1%;
 }
+
 #titreElevage{
 	text-align: center;
 	font-size: 1.5em;
@@ -46,41 +63,102 @@ img{
 	flex-direction: column;
 	justify-content: space-around;
 }
-#contact{
-	margin-top: 1%;
-	border-top: 1px solid;
-}
 #footer{
 	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid;
+	margin-top: 5%;
+	padding: 0.5%;
 }
+
+.adresse{
+	font-size: 1.3em;
+}
+
+#appel{
+	margin-top: 0%;
+	font-size: 1.5em;
+}
+
 iframe{
-	width: 70%;
-	height: 100%;
+	width: 100%;
+	height: 90%;
 }
+
 form{
-	width: 40%;
-	margin: 1%;
+	width: 23%;
 }
+
+#nous{
+	font-size: 1.1em;
+	margin-bottom: -6%;
+	margin-top: 0.5%;
+}
+
 #forme{
 	border: 1px solid black;
 	background-color: #F2F2F2;
-	padding: 2%;
+	padding: 1%;
+	height: 15.6vw;
 }
+
+#disp{
+	display: flex;
+	justify-content: space-around;
+	margin: 8%;
+}
+
+.ecivil{
+	display: flex;
+	flex-flow: column-reverse;
+}
+
+.coord{
+	display: flex;
+	flex-flow: column-reverse;
+}
+
 input{
 	margin: 1%;
 }
-#choix{
-	margin-top: 4%;
-}
-.envoyer{
-	margin-left: 33%;
 
+#choix{
+	margin-bottom: 2%;
+	margin-left: 10%;
+	margin-top: -5%;
 }
-.commentaire{
-	margin-top: 4%;
+
+.envoyer{
+	margin-left: 80%;
 }
+@keyframes animeButton{
+	from{
+		margin-top: 0;
+		box-shadow: 0 5px 5px #333;
+	}
+	to{
+		margin-top: -5px;
+		box-shadow: 0 15px 15px #bbb;
+	}
+}
+
+#commentaire{
+	display: flex;
+	width: 80%;
+	flex-flow: column;
+	margin-left: 10%;
+}
+
 body{
 	margin: 0;
 	background-color: #fff;
 	background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png");
+}
+
+@media all and(max-width: 1020px) {
+	#entete{
+	
+		
+	}
+	
 }
